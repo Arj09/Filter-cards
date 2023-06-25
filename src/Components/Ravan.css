@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.filter {
+  position: relative;
+  width: 20%;
+  display: block;
+  left: 0;
+  height: 100%;
+  margin: 2% 5px;
+
+  border: 0.2px solid grey;
+  border-radius: 5px;
+  background-color: #dfe4ea;
+}
+.title {
+  margin: 10px auto;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+.filter1 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+}
+.filter1 label {
+  margin-bottom: 5px;
+}
+.filter1:last-child {
+  margin-bottom: 100%;
+}
+input {
+  width: 80%;
+  padding: 10px;
+
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+  border-radius: 3px;
+  border: none;
+}
+input:focus {
+  border: none;
+}
+input:hover {
+  border: 0.2px solid blue;
+}
+button {
+  padding: 5px 10px;
+}
+select {
+  padding: 5px 10px;
+}
+.table1 {
+  position: absolute;
+  width: 75%;
+  top: 0;
+  margin-left: 23%;
+
+  background-color: #dfe4ea;
+}
+.card {
+  width: 40%;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+
+  margin: 10px auto;
+  border: none;
+  background-color: #dff9fb;
+  border-radius: 3px;
+}
+
+.image {
+  margin: 15px 2px;
+}
+.fl {
+  display: flex;
+  flex-direction: row;
+}
+
+.info li {
+  margin: 0 0px 0 5px;
+}
+.info {
+  margin: 10px 0;
+}
+
+.pagenumber {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+}
+.pagenumber li {
+  margin: 0 2px;
+}
+
+.pagnation {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.arrow {
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+  border: 0.2px solid black;
+  padding: 5px 10px;
+}
+
+hr {
+  display: none;
+  width: 90%;
+  margin: 20px auto;
+}
+@media only screen and (max-width: 900px) {
+  .card {
+    width: 50%;
+  }
+  .info {
+    font-size: 13px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .filter {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  hr {
+    display: block;
+  }
+  .card {
+    width: 80%;
+  }
+  .info {
+    font-size: 10px;
+  }
+  .info li {
+    margin: 0 0px 0 5px;
+  }
+  .filter {
+    width: 80%;
+    margin: 10px auto;
+    border-radius: none;
+  }
+  .filter1:last-child {
+    margin-bottom: 5%;
+  }
+  .table1 {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    border: none;
+  }
+  .arrow {
+    padding: 2px 4px;
+  }
+}
+@media only screen and (max-width: 200px) {
+  .info {
+    font-size: 9px;
+  }
+  .info li {
+    margin: 0 0px 0 2px;
+  }
+  .image {
+    margin: 15px 0.1px;
+  }
+}
